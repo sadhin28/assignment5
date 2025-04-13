@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Important FAQ </title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header class="sticky top-0 z-30  ">
+        <div
+            class="items-center navbar bg-[#F9F7F3] shadow-sm flex justify-between lg:text-2xl lg:font-bold md:text-xl font-bold">
+            <div>
+                <button id="homes" class=" btn bg-green-500">Home</button>
+            </div>
+            <div class="flex items-center gap-5">
+                <img src="assets/logo.png" alt="">
+                <h1>Donate Bangladesh</h1>
+            </div>
+            <div class="flex gap-2 items-center ">
+                <img class="h-full w-full" src="assets/coin.png" alt="">
+                <p id="FixedBlance">50000</p>
+                <p>BDT</p>
+            </div>
+        </div>
+        
+    </header>
+    <main class=" lg:w-300 mx-auto mt-10 px-5">
+      <div class="mb-20 mt-20">
+        <h1 class="text-5xl font-bold">Important FAQ <i class="fa-solid fa-question text-5xl font-bold"></i> </h1>
+      </div>
+      <!-- faq wuestion and answer -->
+      <div class="grid gap-5">
+        <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title font-semibold">What is the Document Object Model (DOM)?</div>
+            <div class="collapse-content text-sm">The Document Object Model (DOM) is a programming interface that represents HTML or XML documents as a tree of objects.</div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title font-semibold">How do you select on element from the DOM?</div>
+            <div class="collapse-content text-sm">To select an element from the DOM, you can use JavaScript methods like document.getElementById(), querySelector(), or getElementsByClassName(). These allow you to target elements by ID, class, tag, or CSS selector for manipulation or interaction.</div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title font-semibold">What is event Delegation in the context of the DOM, why is it useful?</div>
+            <div class="collapse-content text-sm">Event delegation is a technique where a single event listener is attached to a parent element to manage events on its child elements. It's useful because it improves performance, reduces memory usage, and handles dynamically added elements without needing extra listeners.</div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title font-semibold">How do you manipulate on element's attributes and styles using the DOM?</div>
+            <div class="collapse-content text-sm">You can manipulate an element's attributes using methods like `setAttribute()`, `getAttribute()`, or directly via properties (e.g., `element.href`). For styles, use `element.style.property` (e.g., `element.style.color = "red"`) to dynamically change the element's appearance using JavaScript.</div>
+          </div>
+      </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="js/donationNoakhali.js"></script>
+    <script src="js/donationFeni.js"></script>
+    <script src="js/buttonSwiching.js"></script>
+    <script src="js/CommonFunction.js"></script>
+    <script src="js/donationqota.js"></script>
+   
+</body>
+
+</html>

@@ -1,4 +1,9 @@
 
+document.getElementById('blogbutton')
+.addEventListener('click',function(event){
+event.preventDefault();
+window.location.href='/blogs.html'
+});
 function showPage(pageId) {
   const pages = ['donation', 'history'];
   pages.forEach(id => {
@@ -15,4 +20,8 @@ function showPage(pageId) {
 }
 
 showPage('donation');
+
+
+
+
 

@@ -8,3 +8,10 @@ function getTextvalueByid(id){
     const values=parseFloat(value)
     return values;
 }
+
+document.getElementById('homes')
+.addEventListener('click',function(event){
+event.preventDefault();
+window.location.href='/index.html'
+
+})

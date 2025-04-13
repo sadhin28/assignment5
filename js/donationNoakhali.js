@@ -1,3 +1,4 @@
+
 document.getElementById('DonateNowNoakhali').addEventListener('click', function (event) {
     event.preventDefault;
     const amount = getvalueByid('DonationAmountNoakhali');
