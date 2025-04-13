@@ -22,7 +22,7 @@
             </div>
             <div class="flex gap-2 items-center ">
                 <img class="h-full w-full" src="assets/coin.png" alt="">
-                <p id="FixedBlance">5500</p>
+                <p id="FixedBlance">50000</p>
                 <p>BDT</p>
             </div>
         </div>
@@ -68,7 +68,7 @@
                         <div class="card-actions ">
 
                             <button id="DonateNow" class="btn bg-green-500" onclick="my_modal_5.showModal()">Donate Now</button>
-                            <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle  ">
+                            <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle hidden ">
                                 <div class="modal-box  ">
                                     <div>
                                         <h1 class="text-3xl font-bold">Congrates!</h1>
@@ -92,8 +92,10 @@
 
         </div>
 
-        <div id="history" class="text-center">
-            
+        <div id="history" class="text-center font-bold mt-10">
+              <div id="transactionsContainer" class="max-w-xl mx-auto space-y-4">
+                <!-- Transaction cards will be added here -->
+              </div>
         </div>
     </main>
     <footer>
@@ -103,6 +105,7 @@
     <script src="js/buttonSwiching.js"></script>
     <script src="js/donationNoakhali.js"></script>
     <script src="js/CommonFunction.js"></script>
+   
 </body>
 
 </html>
