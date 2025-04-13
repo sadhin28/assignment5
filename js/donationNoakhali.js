@@ -4,7 +4,8 @@ document.getElementById('DonateNow').addEventListener('click',function(){
    
    if(isNaN(amount)){
     alert('Only money is donated here.');
-    return;
+     document.getElementById('my_modal_5').classList.add('hidden')
+    return location.reload();;
   }
 
    if(fixedamount>=amount && amount>0 ){
@@ -14,11 +15,13 @@ document.getElementById('DonateNow').addEventListener('click',function(){
         const updateblance = getTextvalueByid('Updateblance');
         const TotalBlance =amount+updateblance
         document.getElementById('Updateblance').innerText=TotalBlance;
-        
+        document.getElementById('')
     }
     else{
         
-        alert('There is not enough money in the fund. You have '+ fixedamount+' taka in your account.' )
+        alert('There is not enough money in the fund. You have '+ fixedamount+' taka in your account.' );
+        document.getElementById('my_modal_5').classList.add('hidden')
+        return location.reload();;
     }
   
     
