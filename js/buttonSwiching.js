@@ -5,6 +5,8 @@ function showPage(pageId) {
     document.getElementById(id).classList.add('hidden');
     document.getElementById(id + 'Btn').classList.remove('bg-green-500');
     document.getElementById(id + 'Btn').classList.add('bg-gray-500');
+    
+
   });
 
   document.getElementById(pageId).classList.remove('hidden');
