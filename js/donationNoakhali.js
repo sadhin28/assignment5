@@ -36,7 +36,7 @@ document.getElementById('DonateNowNoakhali').addEventListener('click', function 
         card.appendChild(dateEl);
         card.appendChild(textEl);
         container.appendChild(card);
-        document.getElementById('DonationAmount').value = '';
+        document.getElementById('DonationAmountNoakhali').value = '';
 
     }
     else {

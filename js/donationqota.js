@@ -1,6 +1,6 @@
-document.getElementById('DonateNowFeni').addEventListener('click', function () {
+document.getElementById('DonateNowQuota').addEventListener('click', function () {
    
-    const amount = getvalueByid('DonationAmountFeni');
+    const amount = getvalueByid('DonationAmountQuota');
     const fixedamount = getTextvalueByid('FixedBlance')
 
     if (isNaN(amount)) {
@@ -10,25 +10,25 @@ document.getElementById('DonateNowFeni').addEventListener('click', function () {
     }
 
     if (fixedamount >= amount && amount > 0) {
-        document.getElementById('my_modal_1').classList.remove('hidden');
+        document.getElementById('my_modal_3').classList.remove('hidden');
         const Dicrimentamount = fixedamount - amount;
         document.getElementById('FixedBlance').innerHTML = Dicrimentamount;
-        const updateblance = getTextvalueByid('Updateblancefeni');
+        const updateblance = getTextvalueByid('UpdateblanceQuota');
         const TotalBlance = amount + updateblance;
-        document.getElementById('Updateblancefeni').innerText = TotalBlance;
+        document.getElementById('UpdateblanceQuota').innerText = TotalBlance;
 
         //transaction
 
         const container = document.getElementById("transactionsContainer");
 
         const card = document.createElement("div");
-       
+        
         card.className = "bg-white p-4 rounded-xl shadow-md border ";
 
         const dateEl = document.createElement("p");
         dateEl.className = "text-gray-800 font-semibold";
         const date = new Date();
-        dateEl.textContent = `${amount} Taka Is Donated for Flood Relief in Feni,Bangladesh`;
+        dateEl.textContent = `${amount} Taka Is Donated Aid for Injured in the Quota Movement`;
 
         const textEl = document.createElement("p");
         textEl.className = "text-gray-600 mt-1";
@@ -37,7 +37,7 @@ document.getElementById('DonateNowFeni').addEventListener('click', function () {
         card.appendChild(dateEl);
         card.appendChild(textEl);
         container.appendChild(card);
-        document.getElementById('DonationAmountFeni').value = '';
+        document.getElementById('DonationAmountQuota').value = '';
 
     }
     else {
