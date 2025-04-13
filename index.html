@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <header class="sticky top-0 z-30 h-40 bg-blue-50">
+        <div
+            class="items-center navbar bg-[#F9F7F3] shadow-sm flex justify-between lg:text-2xl lg:font-bold md:text-xl font-bold">
+            <div>
+                <button class=" btn bg-green-500">Blog</button>
+            </div>
+            <div class="flex items-center gap-5">
+                <img src="assets/logo.png" alt="">
+                <h1>Donate Bangladesh</h1>
+            </div>
+            <div class="flex gap-2 items-center ">
+                <img class="h-full w-full" src="assets/coin.png" alt="">
+                <p id="FixedBlance">5500</p>
+                <p>BDT</p>
+            </div>
+        </div>
+        <div class="flex justify-center mt-6">
+            <div class="flex space-x-4 mb-6 ">
+                <button id="donationBtn" onclick="showPage('donation')"
+                    class="px-4 py-2 bg-gray-500 text-white rounded-md">Donation</button>
+                <button id="historyBtn" onclick="showPage('history')"
+                    class="px-4 py-2 bg-gray-500 text-white rounded-md">History</button>
+            </div>
+        </div>
+    </header>
+    <main class=" lg:w-300 mx-auto mt-10">
+        
+        <div id="donation" class="hidden">
+
+            <div class="mx-auto">
+                <div class=" card bg-base-100 lg:w-270 shadow-sm lg:flex 
+                lg:flex-row lg:items-center md:flex md:flex-row ">
+
+                    <figure class="px-4 lg:w-100 md:w-70">
+                        <img src="assets/noakhali.png" alt="NoaKhali" class="rounded-xl  " />
+                    </figure>
+
+                    <div class="card-body items-center text-center lg:w-100 md:w-70">
+                        <div class="flex gap-2 items-center font-bold text-xl">
+                            <img src="assets/coin.png" alt="">
+                            <p id="UpdateBlance">0</p>
+                            <p>BDT</p>
+                        </div>
+                        <h2 class="card-title ">Donate for Flood at Noakhali, Bangladesh</h2>
+                        <p class="text-justify"> The recent floods in Noakhali have caused significant damage to homes
+                            infrastructure. Your donation will help provide essential supplies and to those affected by
+                            this disaster. Every contribution, big or small, makes difference. Please join us in
+                            supporting the relief efforts and making a positive impact on the lives of those in need.
+                        </p>
+                        <fieldset class="fieldset">
+
+                            <input id="DonationAmount" type="text" class=" w-100  input" placeholder="Write Donation Amount" />
+
+                        </fieldset>
+                        <div class="card-actions">
+                            <button id="DonateNow" class="btn bg-green-500">Donate Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div id="history" class="hidden">
+            <h2 class="text-2xl font-bold mb-2">Donation History</h2>
+            <p class="text-gray-700">Here is the list of your previous donations.</p>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+
+    <script src="js/buttonSwiching.js"></script>
+    <script src="js/donationNoakhali.js"></script>
+    <script src="js/CommonFunction.js"></script>
+</body>
+
+</html>
