@@ -10,12 +10,16 @@ document.getElementById('DonateNow').addEventListener('click',function(){
 
    if(fixedamount>=amount && amount>0 ){
         const Dicrimentamount=fixedamount-amount;
-        console.log(Dicrimentamount)
         document.getElementById('FixedBlance').innerHTML=Dicrimentamount;
         const updateblance = getTextvalueByid('Updateblance');
         const TotalBlance =amount+updateblance
         document.getElementById('Updateblance').innerText=TotalBlance;
-        document.getElementById('')
+        const p=document.createElement('p');
+        p.innerText=`${amount} Taka Is Donated for Flood at Noakhali,Bangladesh `;
+        document.getElementById('history').appendChild(p);
+        const date = new Date();
+       
+        
     }
     else{
         
