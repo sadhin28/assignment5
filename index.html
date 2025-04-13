@@ -36,10 +36,107 @@
         </div>
     </header>
     <main class=" lg:w-300 mx-auto mt-10">
-
+ 
         <div id="donation" class="hidden">
+                <!-- card 1 -->
+            <div class="mx-auto ">
+                <div class=" card bg-base-100 lg:w-270 shadow-sm lg:flex 
+                lg:flex-row lg:items-center md:flex md:flex-row ">
 
-            <div class="mx-auto">
+                    <figure class="px-4 lg:w-100 md:w-70">
+                        <img src="assets/noakhali.png" alt="NoaKhali" class="rounded-xl  " />
+                    </figure>
+
+                    <div class="card-body items-center text-center lg:w-120 md:w-70">
+                        <div class="flex gap-2 items-center font-bold text-xl ">
+                            <img src="assets/coin.png" alt="">
+                            <p id="Updateblance">0</p>
+                            <p>BDT</p>
+                        </div>
+                        <h2 class="card-title ">Donate for Flood at Noakhali, Bangladesh</h2>
+                        <p class="text-justify"> The recent floods in Noakhali have caused significant damage to homes
+                            infrastructure. Your donation will help provide essential supplies and to those affected by
+                            this disaster. Every contribution, big or small, makes difference. Please join us in
+                            supporting the relief efforts and making a positive impact on the lives of those in need.
+                        </p>
+                        <fieldset class="fieldset">
+
+                            <input id="DonationAmountNoakhali" type="text" class=" w-100  input"
+                                placeholder="Write Donation Amount" />
+
+                        </fieldset>
+                        <div class="card-actions ">
+
+                            <button id="DonateNowNoakhali" class="btn bg-green-500" onclick="my_modal_4.showModal()">Donate Now</button>
+                            <dialog id="my_modal_4" class="modal modal-bottom sm:modal-middle hidden ">
+                                <div class="modal-box  ">
+                                    <div>
+                                        <h1 class="text-3xl font-bold">Congrates!</h1>
+                                        <img class="mx-auto p-2" src="assets/coin.png" alt="">
+                                        <p class="py-2">You Have Donated For HumanKind</p>
+                                        <h1 class="text-xl font-bold mb-3">Successfully</h1>
+                                    </div>
+                                    <div class="modal-action ">
+                                        <form method="dialog">
+                                            <button id="" class="btn bg-gray-300">Close Confirmation</button>
+                                        </form>
+                                    </div>
+
+                                </div>
+                            </dialog>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <!-- card 2 -->
+            <div class="mx-auto mt-20">
+                <div class=" card bg-base-100 lg:w-270 shadow-sm lg:flex 
+                lg:flex-row lg:items-center md:flex md:flex-row ">
+
+                    <figure class="px-4 lg:w-100 md:w-70">
+                        <img src="assets/feni.png" alt="NoaKhali" class="rounded-xl  " />
+                    </figure>
+
+                    <div class="card-body items-center text-center lg:w-120 md:w-70">
+                        <div class="flex gap-2 items-center font-bold text-xl ">
+                            <img src="assets/coin.png" alt="">
+                            <p id="Updateblancefeni">600</p>
+                            <p>BDT</p>
+                        </div>
+                        <h2 class="card-title ">Donate for Flood Relief in Feni,Bangladesh</h2>
+                        <p class="text-justify"> The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.
+                        </p>
+                        <fieldset class="fieldset">
+
+                            <input id="DonationAmountFeni" type="text" class=" w-100  input"
+                                placeholder="Write Donation Amount" />
+
+                        </fieldset>
+                        <div class="card-actions ">
+
+                            <button id="DonateNowFeni" class="btn bg-green-500" onclick="my_modal_1.showModal()">Donate Now</button>
+                            <dialog id="my_modal_1" class="modal modal-bottom sm:modal-middle hidden ">
+                                <div class="modal-box  ">
+                                    <div>
+                                        <h1 class="text-3xl font-bold">Congrates!</h1>
+                                        <img class="mx-auto p-2" src="assets/coin.png" alt="">
+                                        <p class="py-2">You Have Donated For HumanKind</p>
+                                        <h1 class="text-xl font-bold mb-3">Successfully</h1>
+                                    </div>
+                                    <div class="modal-action ">
+                                        <form method="dialog">
+                                            <button id="" class="btn bg-gray-300">Close Confirmation</button>
+                                        </form>
+                                    </div>
+
+                                </div>
+                            </dialog>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <!-- card 3 -->
+            <div class="mx-auto mt-20">
                 <div class=" card bg-base-100 lg:w-270 shadow-sm lg:flex 
                 lg:flex-row lg:items-center md:flex md:flex-row ">
 
@@ -92,6 +189,7 @@
 
         </div>
 
+   
         <div id="history" class="text-center font-bold mt-10">
               <div id="transactionsContainer" class="max-w-xl mx-auto space-y-4">
                 <!-- Transaction cards will be added here -->
@@ -105,6 +203,7 @@
     <script src="js/buttonSwiching.js"></script>
     <script src="js/donationNoakhali.js"></script>
     <script src="js/CommonFunction.js"></script>
+    <script src="js/donationFeni.js"></script>
    
 </body>
 

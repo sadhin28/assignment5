@@ -1,6 +1,6 @@
-document.getElementById('DonateNowNoakhali').addEventListener('click', function (event) {
+document.getElementById('DonateNowFeni').addEventListener('click', function (event) {
     event.preventDefault;
-    const amount = getvalueByid('DonationAmountNoakhali');
+    const amount = getvalueByid('DonationAmountFeni');
     const fixedamount = getTextvalueByid('FixedBlance')
 
     if (isNaN(amount)) {
@@ -10,12 +10,12 @@ document.getElementById('DonateNowNoakhali').addEventListener('click', function 
     }
 
     if (fixedamount >= amount && amount > 0) {
-        document.getElementById('my_modal_4').classList.remove('hidden');
+        document.getElementById('my_modal_1').classList.remove('hidden');
         const Dicrimentamount = fixedamount - amount;
         document.getElementById('FixedBlance').innerHTML = Dicrimentamount;
-        const updateblance = getTextvalueByid('Updateblance');
-        const TotalBlance = amount + updateblance
-        document.getElementById('Updateblance').innerText = TotalBlance;
+        const updateblance = getTextvalueByid('Updateblancefeni');
+        const TotalBlance = amount + updateblance;
+        document.getElementById('Updateblancefeni').innerText = TotalBlance;
 
         //transaction
 
@@ -27,7 +27,7 @@ document.getElementById('DonateNowNoakhali').addEventListener('click', function 
         const dateEl = document.createElement("p");
         dateEl.className = "text-gray-800 font-semibold";
         const date = new Date();
-        dateEl.textContent = `${amount} Taka Is Donated for Flood at Noakhali Bangladesh `;
+        dateEl.textContent = `${amount} Taka Is Donated for Flood Relief in Feni,Bangladesh`;
 
         const textEl = document.createElement("p");
         textEl.className = "text-gray-600 mt-1";
