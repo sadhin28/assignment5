@@ -196,16 +196,19 @@
               </div>
         </div>
     </main>
-    <footer>
+    <footer class="footer sm:footer-horizontal footer-center bg-[#F9F7F3] text-base-content p-4">
+        <aside>
+         
+          <p>&copy; <span id="year"></span>  All right reserved By Donate Bangladesh</p>
 
-    </footer>
-
+        </aside>
+      </footer>
     <script src="js/buttonSwiching.js"></script>
     <script src="js/donationNoakhali.js"></script>
     <script src="js/CommonFunction.js"></script>
     <script src="js/donationFeni.js"></script>
     <script src="js/donationqota.js"></script>
-   
+    <script>document.getElementById("year").textContent= new Date().getFullYear();</script>
 </body>
 
 </html>
